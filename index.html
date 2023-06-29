@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <title>Responsive Website</title>
+   <style>
+    .img:hover , .col-md-3:hover , .img1:hover {
+      transform: scale(1.1);
+      transition: 0.2s ease-in-out;    
+  }
+  *{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .h1{
+    font-weight: 600;
+  }
+  .col-md-3:hover{
+    transform: scale(1.03);
+      transition: 0.2s ease-in-out;
+  }
+  .form , .cards , .footer{
+    background-color: rgb(242, 149, 149);
+  }
+   </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="mylogo.png" class="img" height="100" width="100">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Most Popular Items</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                  Our Menu
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Chicken Manchuria</a></li>
+                  <li><a class="dropdown-item" href="#">Fish Curry</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">more...</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-danger" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+<!-- Slider -->
+<div id="carouselExampleCaptions" class="carousel slide text-danger" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="noodle.jpg" class="d-block w-100" alt="noodle" height="600">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Chicken Manchuria</h5>
+          <p>Chicken manchurian is a popular Indo chinese appetiser made of fried chicken in manchurian sauce.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img  src="prawn.JPG" class="d-block w-100" alt="prawn fry" height="600">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Chicken Kebab</h5>
+          <p>Kabab or kebab is a piece of food, mostly meat grilled over charcoal fire. There are so many kabab varieties out there which are very popular in ...</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="i3.jpg" class="d-block w-100" alt="fry" height="600">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Tandoori Chicken.</h5>
+          <p>Tandoori chicken is a South Asian dish of chicken marinated in yogurt and spices and roasted in a tandoor, a cylindrical clay oven .</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- heading -->
+  <div class="container-fluid">
+     <div class="row">
+      <div class="col-md-12">
+        <h3 class="display-6 text-center text-danger mt-5 mb-5">
+           Dazzle Dining offers menus for Lunch and Dinner.
+           <br>  Within a year of its opening, Dazzle Dining has been recognised for its quality of food and excellent service.
+        </h3>
+      </div>
+     </div>
+
+     <!-- cards -->
+  
+  <div class="row cards d-flex flex-row bd-highlight mb-3 justify-content-sm-center justify-content-lg-evenly  justify-content-sm-evenly">
+    <div class="col-md-3 text-center">
+      <div class="p-2 bd-highlight">        
+          <div class="card" style="width: 18rem;">
+            <img src="chef.png" class="card-img-top" alt="chef">
+            <div class="card-body">
+              <h5 class="text-center text-danger">Master Chefs</h5>
+              <p class="card-text">Every chef here manages all aspects of food preparation at a restaurant.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="p-2 bd-highlight">        
+            <div class="card" style="width: 18rem;">
+              <img src="spoon.png" class="card-img-top" alt="spoon">
+              <div class="card-body">
+                <h5 class="text-center text-danger">Quality Food</h5>
+                <p class="card-text">We provide a very quality and healthy food at very affordable costs.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    <div class="col-md-3 text-center">
+      <div class="p-2 bd-highlight">
+          <div class="card" style="width: 18rem;">
+            <img src="teleservice.png" class="card-img-top" alt="teleservice">
+            <div class="card-body">
+              <h5 class="text-center text-danger">24/7 Service</h5>
+              <p class="card-text">We provide day and night services which is very useful for night time workers.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>
+<!-- images gallery -->
+<div class="container">
+    <div class="slider">
+      <div class="row inline d-flex flex-row bd-highlight mb-3 justify-content-evenly" >
+        <div class="col-md-12 mx-5 my-5">
+          <h4 class="text-danger">OUR MENU</h4>
+          <a href="#"> <img class="img-fluid rounded mx-2 img1 mb-3" src="chickfry.jpg" width="400" height="400" ></a>
+          <a href="#"><img class="img-fluid rounded mx-2 img mb-3" src="biryani.jpg" width="400" height="400" ></a>
+          <a href="#"><img class="img-fluid rounded mx-2 mb-3 img" src="noodle.jpg" width="400" height="400" ></a>
+          <a href="#"><img class="img-fluid rounded mx-2 mb-3 img1" src="cake.jpg" width="400" height="400" ></a>
+          <a href="#"><img class="img-fluid rounded mx-2 mb-3 img" src="dosa.jpeg" width="400" height="400" ></a>
+          <a href="#"><img class="img-fluid rounded mx-2 mb-3 img" src="img-3.jpg" width="400" height="400" ></a>
+          <a href="#"><img class="img-fluid rounded mx-2 mb-3 img1" src="prawn.JPG" width="400" height="400" ></a>
+          <a href="#"><img class="img-fluid rounded mx-2 mb-3 img" src="veg.jpg" width="400" height="400" ></a>
+          <a href="#"><img class="img-fluid rounded mx-2 mb-3 img" src="burger.jpeg" width="400" height="400" ></a>
+          <a href="#"><img class="img-fluid rounded mx-2 mb-3 img1" src="pizza.jpg" width="400" height="400" ></a>
+          <a href="#"><img class="img-fluid rounded mx-2 mb-3 img" src="chixken.jpg" width="400" height="400" ></a>
+          <a href="#"><img class="img-fluid rounded mx-2 mb-3 img" src="ice.jpg" width="400" height="400" ></a>
+          <a href="#"><img class="img-fluid rounded mx-2 mb-3 img1" src="img-4.jpg" width="400" height="400" ></a>
+          <a href="#"><img class="img-fluid rounded mx-2 mb-3 img" src="fish.jpg" width="400" height="400" ></a>
+          <a href="#"><img class="img-fluid rounded mx-2 mb-3 img" src="img-5.jpg" width="400" height="400" ></a>
+        </div>
+      </div>
+  </div>
+</div> 
+<hr>
+<div class="row justify-content-evenly pt-3 pb-5">
+  <div class="col-md-5">
+    <img src="img-2.png" height="600" width="600" class="img-fluid">
+  </div>
+  <!-- reviews -->
+<div class="col-md-5 ">
+  <h1 class="h1 display-6 text-danger">OUR RATINGS</h1>
+  <br>
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+  <br>
+    <div class="progress">
+      <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <br>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star"></i>
+    <br>
+    <div class="progress">
+      <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <br>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star"></i>
+    <i class="bi bi-star"></i>
+    <br>
+    <div class="progress">
+      <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <br>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star"></i>
+    <i class="bi bi-star"></i>
+    <i class="bi bi-star"></i>
+    <div class="progress">
+      <div class="progress-bar bg-danger" role="progressbar" style="width:1%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <br>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star"></i>
+    <i class="bi bi-star"></i>
+    <i class="bi bi-star"></i>
+    <i class="bi bi-star"></i>
+    <br>
+    <div class="progress">
+      <div class="progress-bar bg-danger" role="progressbar" style="width:1%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+  </div>
+</div>
+<!-- contact form -->
+<div class="container-fluid form">
+  <div class="row justify-content-evenly pt-2 pb-5">
+    <div class="col-md-5 mt-5">
+        <form>
+          <h4 class="mb-4">Contact Us</h4>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Full Name</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Review</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+          </div>
+          <button type="submit" class="btn btn-danger">Submit</button>
+        </form>
+    </div>
+    <div class="col-md-5 mt-5">
+      <h3 class="mb-4">Address</h3>
+      <p>
+        7-14 Raghavulapeta , N.Kothapalli <br>
+        Uppalaguptam , Konaseema ,<br>
+        Andra Pradesh , India.<br>
+        <i class="bi bi-telephone-inbound"></i> : 767782797
+      </p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7658.270580026406!2d79.91260254999996!3d16.316030100000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3562b61973ed45%3A0xdfef46f47fea6c81!2sKothapalli%2C%20Andhra%20Pradesh%20522615!5e0!3m2!1sen!2sin!4v1688038344943!5m2!1sen!2sin" style="width:100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</div>
+<div class="opening">
+  <p class=" text-center">You can also visit our restaurant at given address.Timimgs of our restaurant are mentioned below.</p>
+  <h4 class="text-center">OPENING </h4>
+   <p class="text-center"> Monday - Saturday<br>
+       09AM - 09PM<br>Sunday <br> 10AM - 08PM<br>
+   </p>
+</div>
+<!-- footer -->
+<div class="container-fluid footer justify-content-evenly">
+  <div class="row text-center">
+    <div class="col-md-5">
+       <h4>Dazzle Dining</h4>
+       <img src="mylogo.png" class="img-fluid">
+       <p>We are always here to serve you.<br>
+        Feel free to contact us and to ask anything about our services.
+       </p>
+    </div>
+    <div class="col-md-5">
+      <h4>Contact Us</h4>
+      <p>7-14 Raghavulapeta , N.Kothapalli <br>
+        Uppalaguptam , Konaseema ,<br>
+        Andra Pradesh , India.<br>
+        <i class="bi bi-telephone-inbound"></i> : 767782797
+      </p>
+    </div>
+  <div>
+<p>@2023 All Rights Reserved.</p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
